@@ -7,7 +7,7 @@ class Editor:
 
 class ProEditor(Editor):
     def edit_document(self):
-        print("Ми можемо редагувати документ.")
+        print(f"Ми можемо редагувати документ.")
 
 valid_password = "PRO12345"
 
