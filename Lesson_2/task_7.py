@@ -21,15 +21,13 @@ class Vehicle:
         print(f"Колір: {self.color}")
         
 class Car(Vehicle):
-    def __init__(self, brand, model, year, color, number_of_doors, engine_type):
+    def __init__(self, brand, model, year, color, number_of_doors):
         super().__init__(brand, model, year, color)
         self.number_of_doors = number_of_doors
-        self.engine_type = engine_type
 
     def print_info(self):
         super().print_info()
         print(f"Кількість дверей: {self.number_of_doors}")
-        print(f"Тип двигуна: {self.engine_type}")
         print()
 
 class Truck(Vehicle):
@@ -39,7 +37,7 @@ class Truck(Vehicle):
 
     def print_info(self):
         super().print_info()
-        print(f"Вантажопідйомність: {self.carrying_capacity} tons")
+        print(f"Вантажопідйомність: {self.carrying_capacity} тон")
         print()
 
 class Motorcycle(Vehicle):
@@ -52,7 +50,7 @@ class Motorcycle(Vehicle):
         print(f"Об'єм двигуна: {self.engine_capacity} cc")
         print()
 
-car = Car("Toyota", "Camry", 2020, "Blue", 4, "Petrol")
+car = Car("Toyota", "Camry", 2020, "Blue", 4)
 truck = Truck("Mercedes-Benz", "Actros", 2018, "White", 20)
 motorcycle = Motorcycle("Yamaha", "MT-07", 2022, "Black", 689)
 
